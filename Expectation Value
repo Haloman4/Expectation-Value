@@ -14,8 +14,3 @@ display(Expectation(p, x2))
 x_squared_row = x2.applyfunc(lambda element: element**2)
 
 display(Expectation(p, x_squared_row)-Expectation(p, x2)**2)
-
-c = sp.Symbol('c')
-pmf = sp.Eq((c*(1/4)**1)+(2/c)+(3/c)+(4/c), 1)
-pmf_sol = sp.solve(pmf)
-display(pmf_sol)
